@@ -13,7 +13,10 @@ function mimicServerCall() {
   fetch('')
   .then(response => response.json())
   .then(json => {})
-  .catch(error => {})
+  .catch(error => {
+    const modal = document.getElementById('modal');
+    modal.removeclass()
+  })
 }
 
 //------------------------------------------------------------------------------
