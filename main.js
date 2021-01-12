@@ -5,7 +5,7 @@ const FULL_HEART = '♥'
 // Your JavaScript code goes here!
 
 document.addEventListener('DOMEventLoaded', () => {
-  const likes = document.getElementByClassName('like');
+  const likes = document.getElementsByClassName('like');
   for (const like in likes) {
     like.addEventListener('click', clickHeart()) {
 
