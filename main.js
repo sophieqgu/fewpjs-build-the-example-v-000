@@ -8,8 +8,8 @@ document.addEventListener('DOMEventLoaded', () => {
   const likes = document.getElementByClassName('like');
   for (const like in likes) {
     like.addEventListener('click', function()) {
-      mimicServerCall()
-      .then()
+      const heart = event.target;
+      
     }
   }
 })
