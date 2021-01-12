@@ -15,7 +15,8 @@ function mimicServerCall() {
   .then(json => {})
   .catch(error => {
     const modal = document.getElementById('modal');
-    modal.removeclass()
+    modal.removeClass('hidden');
+    modal.
   })
 }
 
