@@ -28,6 +28,9 @@ function clickHeart(event) {
       modal.innerText = error.message;
       setTimeout(() => modal.setAttribute('class', 'hidden'), 5000);
     })
+  } else {
+    heart.innerText = EMPTY_HEART;
+    heart.removeAttribute('class', 'activated-heart');
   }
 }
 
