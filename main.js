@@ -16,7 +16,8 @@ function mimicServerCall() {
   .catch(error => {
     const modal = document.getElementById('modal');
     modal.removeClass('hidden');
-    modal.
+    modal.innerText = error.message;
+    setTimeout(() => )
   })
 }
 
