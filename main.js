@@ -13,7 +13,11 @@ function mimicServerCall() {
   fetch('')
   .then(response => response.json())
   .then(json => {
-    
+    if () {
+      event.target.addClass(activated-heart);
+    } else {
+      event.target.removeClass(activated-heart);
+    }
   })
   .catch(error => {
     const modal = document.getElementById('modal');
