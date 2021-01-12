@@ -25,7 +25,7 @@ function clickHeart(event) {
     .catch(error => {
       const modal = document.getElementById('modal');
       modal.removeAttribute('class', 'hidden');
-      modal.innerText = error.message;
+      modal.innerText = "Server failed.";
       setTimeout(() => modal.setAttribute('class', 'hidden'), 5000);
     })
   } else {
