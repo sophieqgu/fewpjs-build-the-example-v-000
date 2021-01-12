@@ -4,8 +4,17 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-const likes = document.getElementByClassName('like')
+const likes = document.getElementByClassName('like');
+likes.addEventListener('click', function()) {
+  mimicServerCall();
+}
 
+function mimicServerCall() {
+  fetch('')
+  .then(response => response.json())
+  .then(json => {})
+  .catch(error => {})
+}
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
