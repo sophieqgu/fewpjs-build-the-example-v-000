@@ -4,12 +4,15 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-document.addEventListener('DOMEventLoaded', () => {
-  const likes = document.getElementsByClassName('like-glyph');
-  for (const like in likes) {
-    like.addEventListener('click', clickHeart);
+document.addEventListener("DOMContentLoaded", () => {
+  const object = document.getElementsByClassName('like-glyph')
+  for (const heart in object) {
+    if (object.hasOwnProperty(heart)) {
+      const element = object[heart];
+      element.addEventListener("click", clickHeart)
+    }
   }
-})
+});
 
 function clickHeart(event) {
   let heart = event.target;
