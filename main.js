@@ -4,10 +4,18 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-const likes = document.getElementByClassName('like');
-likes.addEventListener('click', function()) {
-  mimicServerCall();
-}
+document.addEventListener('DOMEventLoaded', () => {
+  const likes = document.getElementByClassName('like');
+  for (const like in likes) {
+    like.addEventListener('click', function()) {
+      mimicServerCall()
+      .then()
+    }
+  }
+})
+
+
+
 
 function mimicServerCall() {
   fetch('')
