@@ -4,7 +4,7 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-const likes = document.getElementByClass('id')
+const likes = document.getElementByClassName('likes')
 
 
 //------------------------------------------------------------------------------
