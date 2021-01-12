@@ -7,24 +7,28 @@ const FULL_HEART = '♥'
 document.addEventListener('DOMEventLoaded', () => {
   const likes = document.getElementByClassName('like');
   for (const like in likes) {
-    like.addEventListener('click', function()) {
-      let heart = event.target;
-      if (heart.innerText == EMPTY_HEART) {
-        mimicServerCall()
-        .then(response => {
-          heart.innerText = FULL_HEART;
-          heart.setAttribute('class', 'activated-heart');
-        })
-        .catch(error => {
-          const modal = document.getElementById('modal');
-          modal.removeAttribute('class', 'hidden');
-          modal.innerText = error.message;
-          setTimeout(() => modal.setAttribute('class', 'hidden'), 5000);
-        })
-      }
+    like.addEventListener('click', clickHeart()) {
+
     }
   }
 })
+
+function clickHeart(event) {
+  let heart = event.target;
+  if (heart.innerText == EMPTY_HEART) {
+    mimicServerCall()
+    .then(response => {
+      heart.innerText = FULL_HEART;
+      heart.setAttribute('class', 'activated-heart');
+    })
+    .catch(error => {
+      const modal = document.getElementById('modal');
+      modal.removeAttribute('class', 'hidden');
+      modal.innerText = error.message;
+      setTimeout(() => modal.setAttribute('class', 'hidden'), 5000);
+    })
+  }
+}
 
 
 
