@@ -12,12 +12,14 @@ likes.addEventListener('click', function()) {
 function mimicServerCall() {
   fetch('')
   .then(response => response.json())
-  .then(json => {})
+  .then(json => {
+    
+  })
   .catch(error => {
     const modal = document.getElementById('modal');
     modal.removeClass('hidden');
     modal.innerText = error.message;
-    setTimeout(() => modal.addClass('hidden'), )
+    setTimeout(() => modal.addClass('hidden'), 5000);
   })
 }
 
